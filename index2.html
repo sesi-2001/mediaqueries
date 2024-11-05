@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Food Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+        }
+
+        nav div {
+            text-align: center;
+        }
+
+        nav h1 {
+            margin: 0;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .el1 {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+            border: 2px solid white;
+            margin: 0% 5%;
+        }
+
+        .el1 img {
+            width: 100%;
+            height: auto;
+        }
+
+        .el1 p {
+            padding: 10px;
+            text-align: justify;
+        }
+
+        .page {
+            text-align: center;
+        }
+
+        .page a {
+            margin: 5px;
+            padding: 8px 16px;
+            background-color: #ddd;
+            color: black;
+            text-decoration: none;
+        }
+
+        .page a.active {
+            background-color: #333;
+            color: white;
+        }
+
+        .page1 img {
+            width: 100%;
+            height: auto;
+        }
+
+        .page1 {
+            text-align: center;
+        }
+
+        .page1 p {
+            margin: 0 0 10px 0;
+        }
+
+        footer {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            background-color: #f1f1f1;
+            padding: 0% 10%;
+        }
+
+        footer h4 {
+            margin-bottom: 10px;
+        }
+
+        footer p, footer div {
+            margin-bottom: 10px;
+        }
+
+        .f1, .f2, .f3 {
+            text-align: center;
+        }
+        .f2 img {
+            width: 20%;
+            height: auto;
+        }
+
+        .j {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .j div {
+            margin: 5px;
+            padding: 5px 10px;
+            background-color: #ddd;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            .el1 {
+                grid-template-columns: 1fr;
+            }
+
+            footer {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav div {
+                font-size: 18px;
+            }
+
+            .el1 p {
+                font-size: 14px;
+            }
+            .page a{
+                margin: 5px;
+                padding: 5px 10px;
+                background-color: #ddd;
+                color: black;
+                text-decoration: none;
+            }
+
+            }
+
+            footer p {
+                font-size: 12px;
+            }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <div><h1>Menu</h1></div>
+        <div><h1>My Food</h1></div>
+        <div><h1>Mail</h1></div>
+    </nav>
+    <br><br><br>
+    <section>
+        <div class="el1">
+            <div><img src="f1.jpg" alt="">
+            <p><b>The Perfect Sandwich, A Real NYC Classic</b><br><br>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>
+            <div><img src="f2.jpg" alt="">
+            <p><b>Let Me Tell You About This Steak</b><br><br>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>
+            <div><img src="f3.jpg" alt=""><p><b>Cherries, interrupted</b><br><br>Lorem ipsum text praesent tincidunt ipsum lipsum.
+                What else?</p></div>
+            <div><img src="f4.jpg" alt=""><p><b>Once Again, Robust Wine and Vegetable Pasta</b><br><br>Lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>    
+        </div>
+
+        <div class="el1" style="padding-top: 50px;">
+            <div><img src="f5.jpg" alt="">
+            <p><b>All I Need Is a Popsicle</b><br><br>Lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>
+            <div><img src="f6.jpg" alt="">
+            <p><b>Salmon For Your Skin</b><br><br>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>
+            <div><img src="f7.jpg" alt=""><p><b>The Perfect Sandwich, A Real Classic</b><br><br>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>
+            <div><img src="f8.jpg" alt=""><p><b>Le French</b><br><br>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p></div>    
+        </div>
+
+        <div class="page">
+            <a href="#">&laquo;</a>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">4</a>
+            <a href="#">&raquo;</a>
+            <br><br><br>
+            <hr>
+        </div><br><br><br>
+
+        <div class="page1">
+            <h2>About Me, The Food Man</h2><br><br>
+            <img src="f9.jpg" alt=""><br><br><br>
+
+            <h3>I am Who I Am!</h3><br>
+            <p>With Passion For Real, Good Food</p><br>
+            <p style="text-align:justify;">Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you.
+                 Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p><br><br>
+            
+            <hr><br><br><br>
+        </div>
+    </section>
+    <footer>
+        <div class="f1"><h4>FOOTER</h4>
+            <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+            <p>Powered by<a href="" style="color: black;"></a>w3.css</p>
+        </div>
+
+        <div class="f2"><h4>BLOG POSTS</h4><br>
+            <img src="f10.jpg" alt=""></img>
+            <p><br>Lorem<br>Sed mattis nunc</p>
+
+            <img src="f11.jpg" alt=""></img>
+            <div><p><br>Ipsum<br>Praes tinci sed</p></div> 
+        </div>
+
+        <div class="f3"><h4>POPULAR TAGS</h4>
+            <div class="j">
+                <div>Travel</div>
+                <div>New York</div>
+                <div>Dinner</div>
+                <div>Salmon</div>
+                <div>France</div>
+                <div>Drinks</div><br>
+                <div>Ideas</div>
+                <div>Flavors</div>
+                <div>Cuisine</div>
+                <div>Chicken</div>
+                <div>Dressing</div>
+                <div>Fried</div>
+                <div>Fish</div>
+                <div>Duck</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
